@@ -41,7 +41,7 @@
           //console.log("Checked: " + checkbox.checked);
           if (checkbox.checked) {
             var iframe = document.getElementById("rankings");
-            iframe.src = iframe.src; // reload
+            iframe.src = pagebase + "?n=" + (count++); // reload
           }
         };
         var nsec = 30; // should be 30
